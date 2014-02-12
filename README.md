@@ -2,7 +2,7 @@ Conveyor(Prhagger) for rhaco1
 ===================
 
 ##インストール
-		rhacoのダウンロード <https://github.com/tokushima/rhaco1/releases/tag/1.6.2>
+		rhacoのダウンロード: http://github.com/tokushima/rhaco1/releases/tag/1.6.2
 		解凍後、rhacoフォルダをConveyorのlibrary以下へ配置します。
 
 ##初期処理
