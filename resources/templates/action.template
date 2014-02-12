@@ -1,0 +1,7 @@
+require_once("__init__.php");
+Rhaco::import("Conveyaml");
+Conveyaml::execute(
+<<< __YAML__
+{$yaml}
+__YAML__
+);

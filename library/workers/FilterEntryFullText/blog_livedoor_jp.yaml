@@ -1,0 +1,9 @@
+# upgrade http://blog.livedoor.jp/.*/index.rdf
+#author: SHIGETA Takeshiro
+handle: http://blog\.livedoor\.\w+/\w+/
+extract_xpath: |
+  //div[@class=main]
+  //div[@class=mainmore]
+extract_capture: |
+  description
+  comment

@@ -1,0 +1,6 @@
+#upgrade http://jp.techcrunch.com/archives/
+#author: SHIGETA Takeshiro
+author: Techcrunch Japanese
+handle: http://jp\.techcrunch\.com/archives/
+extract_xpath: //div[@class=entry]
+extract_capture: description

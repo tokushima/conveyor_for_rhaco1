@@ -1,0 +1,7 @@
+#upgrade http://www.technobahn.com/index2.xml
+#author: SHIGETA Takeshiro
+author: Technobahn
+handle: http://www\.technobahn\.com/cgi-bin/news/read2\?f=\d+
+extract: (Technobahn\s*\d{4}\/.*?)<div id=\"layer-zoomin\"
+extract_capture: description
+extract_after_hook: if(preg_match('@<form name=\"myFORM\" action=\"(.*?)\"@',$item->description,$match)) $item->description = str_replace('javaScript:send()',$match[1],$item->description);

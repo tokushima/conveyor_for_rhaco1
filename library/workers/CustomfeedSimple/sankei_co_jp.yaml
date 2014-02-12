@@ -1,0 +1,5 @@
+# http://www.sankei.co.jp/news/
+#author: Masafumi Otsune
+author: 産経新聞
+handle: http://www.sankei.co.jp/
+follow_link: /\w+/\w+/\d+/\w+\.htm

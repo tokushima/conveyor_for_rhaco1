@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Conveyor</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+
+	<link rel="stylesheet" type="text/css" href="./js/resources/css/ext-all.css" />
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<rt:if param="{$theme}"><link rel="stylesheet" type="text/css" href="./js/resources/css/{$theme}.css"></rt:if>
+	<script type="text/javascript" src="./js/adapter/ext/ext-base.js"></script>
+	<script type="text/javascript" src="./js/ext-all.js"></script>
+	<script type="text/javascript" src="./js/conveyor.js"></script>
+	<script type="text/javascript">
+		var message = {
+			'add':'{$message._n("add")}',
+			'delete':'{$message._n("delete")}',
+			'generate':'{$message._n("generate")}',
+			'load':'{$message._n("load")}',
+			'install':'{$message._n("install")}',
+			'delete':'{$message._n("delete")}',
+			'update':'{$message._n("update")}',
+			'loading':'{$message._n("Loading")}',
+			'generating':'{$message._n("Generating")}'
+		};
+		<rt:if param="{$logo}">var logo = 'resources/templates/logos/{$logo}.gif';<rt:else />var logo='resources/templates/logos/logo.gif'</rt:if>;
+	</script>
+</head>
+
+<body>
+	<div id="loading-mask"></div>
+	<div id="loading">
+	<div class="loading-indicator">
+		<img src="js/resources/images/default/shared/large-loading.gif" width="32" height="32" style="margin-right:8px;float:left;vertical-align:top;"/><span id="loading-msg">{$loadmsg}</span>
+	</div>
+	</div>
+	<div id="hd" class="x-layout-inactive-content">
+	</div>
+	<div id="nav" class="x-layout-inactive-content">
+		<div id="toolbar"></div>
+		<div id="modulelist">
+		</div>
+	</div>
+	<div id="bd" class="x-layout-inactive-content">
+		<div id="main">
+		</div>
+		<div id="employee">
+		</div>
+		<div id="workers">
+		</div>
+		<div id="lines">
+		</div>
+	</div>
+	<div id="ft" class="x-layout-inactive-content">
+	</div>
+</body>
+</html>

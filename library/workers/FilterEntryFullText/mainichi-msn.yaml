@@ -1,0 +1,6 @@
+#http://mainichi.jp/rss/.*?\.rss
+#author: SHIGETA Takeshiro
+author: 毎日新聞
+handle:http://mainichi\.jp/.+[^/photo/]
+extract_xpath: //div[@class=NewsBody]
+extract_capture: description

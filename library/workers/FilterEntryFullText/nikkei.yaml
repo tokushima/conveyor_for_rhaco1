@@ -1,0 +1,12 @@
+#author: woremacx
+author: “úŒo
+handle: http://www\.nikkei\.co\.jp/news/
+extract_xpath: |
+  //div[@class=article-cap]
+  //div[@class=article-cap]/span
+extract_capture: |
+  description
+  time
+#extract_after_hook: |
+#  $evdate = (preg_match('@/news/\w+?/(\d{4})(\d\d)(\d\d)@',$item->link,$match))? "${match[1]}-${match[2]}-${match[3]} ".$item->time." JST" : "";
+#  $item->setPubDate($evdate);

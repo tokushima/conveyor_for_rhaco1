@@ -1,0 +1,5 @@
+# upgrade nikkeibp ITpro http://itpro.nikkeibp.co.jp/
+#author: SHIGETA Takeshiro
+handle: http://itpro\.nikkeibp\.co\.jp/article
+extract_xpath: //div[@id=kiji]
+extract_capture: description

@@ -1,0 +1,6 @@
+# http://it.nikkei.co.jp/
+#author: SHGIETA Takeshiro
+author: IT NIKKEI
+handle: http://it\.nikkei\.co\.jp/.*?/news/index\.aspx\?n=
+extract: (<p class=\"article\"><!-- FJZONE START NAME=\"HONBUN\" -->.*?<!-- FJZONE END NAME=\"HONBUN\" --></p>)
+extract_capture: description

@@ -1,0 +1,6 @@
+#author: SHIGETA Takeshiro
+handle: http://yaplog\.jp/\w+/archive/\d+
+extract_xpath: //div[@class=txt]
+extract_capture: description
+#extract_after_hook: |
+#  $item->setDescription(preg_replace('@<script.*?</script>@g','',$item->getDescription()));

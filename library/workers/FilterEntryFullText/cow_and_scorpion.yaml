@@ -1,0 +1,6 @@
+# upgrade http://cowscorpion.com/news.xml
+#author: SHIGETA Takeshiro
+author: Cow and Scorpion
+handle: http://cowscorpion\.com/\w+/
+extract_xpath: //td[@class=txtbox]
+extract_capture: description

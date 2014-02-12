@@ -1,0 +1,6 @@
+handle: http://sportsnavi\.yahoo\.co\.jp/.*/headlines/
+author: Sports Navi
+extract_xpath: //p[@class=user1]
+extract_capture: description
+extract_date_format: %Y年%m月%d日 %H:%M
+

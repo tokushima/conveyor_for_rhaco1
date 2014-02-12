@@ -1,0 +1,5 @@
+# upgrade http://d.hatena.ne.jp/.*/rss
+#author: SHIGETA Takeshiro
+handle: http://d\.hatena\.ne\.jp/[\w-_]+/
+extract_xpath: //div[@class=body]
+extract_capture: description

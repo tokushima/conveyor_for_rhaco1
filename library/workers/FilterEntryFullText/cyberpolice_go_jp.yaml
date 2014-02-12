@@ -1,0 +1,6 @@
+# upgrade http://www.cyberpolice.go.jp/index.rdf
+#author: SHIGETA Takeshiro
+author: 警察庁セキュリティポータル
+handle: http://www\.cyberpolice\.go\.jp/important/\d{4}/[\d_]+\.html
+extract_xpath: //td[@colspan=2]
+extract_capture: description

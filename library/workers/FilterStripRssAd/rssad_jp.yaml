@@ -1,0 +1,1 @@
+condition: description = <br[^\/>]*?/><a\s+href=\"http://rss\.rssad\.jp/rss/ad/.*?\" target=\"_blank\".*?><img\s+.*?src=\"http://rss\.rssad\.jp/rss/img/.*?\"[^\/>]*?/></a><br.*?>

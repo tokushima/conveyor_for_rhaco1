@@ -1,0 +1,6 @@
+# upgrade http://feeds.feedburner.jp/moongift
+#author: SHIGETA Takeshiro
+author: MoonGift
+handle: http://www\.moongift\.jp/\d+/\d+/
+extract: <p class="meta2">(.*?)<div class="adsense_head">
+extract_capture: description

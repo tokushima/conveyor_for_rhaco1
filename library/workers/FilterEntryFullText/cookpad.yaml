@@ -1,0 +1,6 @@
+# COOKPAD
+#author: SHIGETA Takeshiro
+author: CookPad
+handle: http://cookpad\.com/\w+?/recipe/\d+
+extract_xpath: //div[@id=main]
+extract_capture: description

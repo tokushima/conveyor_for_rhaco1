@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>{$title}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<link rel="stylesheet" href="./style.css" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+		<h1>{$title}</h1>
+	</div>
+	<div id="main">
+		<rt:loop param="items" var="item">
+		<fieldset>
+			<legend><a href="{$item.getLink()}">{$item.getTitle()}</a></legend>
+			{$f.getCdata({$f.htmldecode({$item.getDescription()})})}
+		</fieldset>		
+		</rt:loop>
+	</div>
+	<div id="footer">
+		made with Conveyord.
+	</div>
+</div>
+</body>
+</html>

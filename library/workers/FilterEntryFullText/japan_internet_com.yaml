@@ -1,0 +1,5 @@
+# upgrade http://japaninternetcom.pheedo.jp/f/japaninternetcom
+#author: SHIGETA Takeshiro
+handle: http://japan\.internet\.com/\w+/\d{8}/\d+\.html
+extract: <!-+ 記事本文 -+>\s*<tr>\s*<td>(.*?)<!-+ 記事本文 END -+>
+extract_capture: description

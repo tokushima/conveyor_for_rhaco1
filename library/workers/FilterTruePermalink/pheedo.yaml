@@ -1,0 +1,4 @@
+#author: SHIGETA Takeshiro
+match: (?:pheedo|phdo)
+replace: guid
+

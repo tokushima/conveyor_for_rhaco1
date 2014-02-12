@@ -1,0 +1,9 @@
+<project rhacover="1.4.0">
+    <database name="deduped" renew="true">
+        <table name="urls">
+            <column name="id" type="serial" />
+            <column name="url" type="string" require="true" />
+            <column name="pubdate" type="string" />
+        </table>
+    </database>
+</project>

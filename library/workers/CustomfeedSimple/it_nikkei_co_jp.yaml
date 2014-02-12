@@ -1,0 +1,4 @@
+# http://it.nikkei.co.jp/
+#author: Masafumi Otsune
+handle: http://it.nikkei.co.jp/
+follow_link: http://rd\.nikkei\.co\.jp/it/newslist\.aspx/gennavi/u=http://it\.nikkei\.co\.jp/\w+/news/index\.aspx

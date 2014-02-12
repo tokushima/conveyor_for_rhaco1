@@ -1,0 +1,4 @@
+#author: SHIGETA Takeshiro
+match: feedburner
+replace: guid
+

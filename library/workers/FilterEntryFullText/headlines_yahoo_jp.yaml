@@ -1,0 +1,6 @@
+# upgrade http://headlines.yahoo.co.jp/rss/*.xml
+#author: SHIGETA Takeshiro
+author: Yahooヘッドライン
+handle: http://headlines\.yahoo\.co\.jp/
+extract: <!--- __entry_body_start__ --->(.*?)<!--- __entry_body_end__ --->
+extract_capture: description

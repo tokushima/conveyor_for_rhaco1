@@ -1,0 +1,11 @@
+# upgrade http://slashdot.jp/index.rss
+#author: SHIGETA Takeshiro
+author: SlashDot Japan
+handle: http://slashdot\.jp/
+extract_xpath: |
+  //div[@class=intro]
+  //ul[@id=commentlisting]
+extract_capture: |
+  description
+  more
+extract_after_hook: if(method_exists($item,'getMore')) $item->setDescription($item->getDescription().$item->getMore());

@@ -1,0 +1,50 @@
+.x-form-item {
+    padding:10px 10px 5px 10px;
+    border:1px solid #B5B8C8;
+}
+.x-box-mc {
+	>height:0px;
+}
+.required{
+	color: #ff0000;
+}
+
+label .subscription, .subscription .x-panel-header-text{
+	font-weight: bold;
+	color: #FE8000;
+}
+label .filter, .filter .x-panel-header-text{
+	font-weight: bold;
+	color: #01C100;
+}
+label .publish, .publish .x-panel-header-text{
+	font-weight: bold;
+	color: #0160C0;
+}
+p{
+	margin: 5px;
+	font-size: 12px;
+}
+#loading {
+        position:absolute;
+        left:45%;
+        top:40%;
+        padding:2px;
+        z-index:20001;
+        height:auto;
+        border:1px solid #ccc;
+}
+#loading a {
+        color:#225588;
+}
+#loading .loading-indicator{
+        background:white;
+        color:#444;
+        font:bold 13px tahoma,arial,helvetica;
+        padding:10px;
+        margin:0;
+        height:auto;
+}
+    #loading-msg {
+        font: normal 10px arial,tahoma,sans-serif;
+    }

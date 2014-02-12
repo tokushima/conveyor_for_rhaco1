@@ -1,0 +1,4 @@
+# COOKPAD
+handle: http://cookpad.com/search/tsukurepo.cfm
+follow_link: /\w+/recipe/\d+/
+extract_date_format: %Y/%m/%d

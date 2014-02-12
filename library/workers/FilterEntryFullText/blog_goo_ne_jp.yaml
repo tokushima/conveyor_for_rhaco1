@@ -1,0 +1,6 @@
+#author: SHIGETA Takeshiro
+handle: http://blog.goo.ne.jp/.+
+extract: <!--エントリー-->(.*?)(?:<!--gooAd-->|<!--/エントリー-->)
+extract_capture: description
+extract_after_hook: |
+  $item->setDescription(preg_replace('@<.*?div.*?>@','',$item->getDescription()));

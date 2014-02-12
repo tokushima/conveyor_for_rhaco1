@@ -1,0 +1,7 @@
+<rt:block name="widget">
+<rt:loop param="{$item.getWidget()}" var="widget" key="wname">
+	<div class="{$wname}">
+		<rt:if param="{$widget['url']}"><a href="{$widget['url']}"></rt:if>{$widget['content']}<rt:if param="{$widget['url']}"></a></rt:if>
+	</div>
+</rt:loop>
+</rt:block>

@@ -1,0 +1,6 @@
+# CNN
+#author: SHIGETA Takeshiro
+author: CNN
+handle: http://.*?\.cnn\.com/
+extract_xpath: //div[@id=cnnTxtCmpnt]
+extract_capture: description

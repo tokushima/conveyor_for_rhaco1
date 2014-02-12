@@ -1,0 +1,6 @@
+# upgrade http://www.pheedo.jp/f/gigazine_2
+#author: SHIGETA Takeshiro
+author: GIGAZINE
+handle: http://gigazine\.net/index.php\?/news/comments/\w+
+extract: <!-- google_ad_section_start -->(.*?)<!-- google_ad_section_end -->
+extract_capture: description

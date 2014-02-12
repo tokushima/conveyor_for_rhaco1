@@ -1,0 +1,5 @@
+# http://news.livedoor.com/.*rss.*
+#author: SHIGETA Takeshiro
+handle: http://news\.livedoor\.com/.*/detail
+extract_xpath: //div[@class=topics-article clearfix]
+extract_capture: description

@@ -1,0 +1,78 @@
+<html>
+<head>
+	<title>{$title}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<link rel="stylesheet" href="./style.css" type="text/css" />
+	<script src="./jquery.js" type="text/javascript"></script>
+	<script type="text/javascript">
+//	設定データを読み出すcron.variable("loop")とか
+	var file = '{$cron.variable("file")}';
+	var loop = '{$cron.variable("loop")}';
+	var post = '{$cron.variable("post")}';
+	var finish = '{$cron.variable("finish")}';
+	var itime = '{$cron.variable("time")}';
+	var wl = 0;
+	var l = 0;
+	var timer;
+//	フィードデータを取って配列に入れる
+	var rss = [<rt:loop param="post" var="rssitem" count="count" last="last">'{$rssitem}'<rt:ifNot param="last" value="count">,</rt:ifNot></rt:loop>];
+	var rssbkup = rss;
+	function request(){
+//		設定に従ってajax
+		$.ajax({type:'GET',url:file+'.php',data:"rss="+rss.pop(),
+		success:function(response){
+			if(typeof(response) == 'string'){
+				console.log('string');
+				$('#main').append('<div class="item">'+response+'</div>');
+			}else{
+				console.log('xml');
+				$('/rss/channel/item',response).each(function(){
+					var _html = '<div class="item>';
+					_html = _html + $('link',this).text();
+					_html = _html + '</div>';
+					$('#main').append(_html);
+				});
+			}}});
+		if(rss.length == 0){
+			rss = rssbkup;
+			wl++;
+		}
+		l++;
+//		設定に従ってstop
+		if(isFinished()){
+			clearInterval(timer); // setInterval()を解除する
+		}
+	}
+	function isFinished(){
+		if(finish == 'none'){
+			return false;
+		}else if(finish == 'wholespecified'){
+			return (wl >= loop)? true : false;
+		}else if(finish == 'specified'){
+			return (l >= loop)? true : false;
+		}else{
+			return true;
+		}
+	}
+//	経過表示をするかどうか（最初は無し）
+	$(function(){
+//	設定に従ってsetInterval
+		timer = setInterval("request()",itime*1000);
+	});
+	</script>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+		<h1>{$title}</h1>
+	</div>
+	<div id="main">
+	</div>
+	<div id="footer">
+		made with Conveyord.
+	</div>
+</div>
+</body>
+</html>

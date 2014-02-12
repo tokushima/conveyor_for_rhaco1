@@ -1,0 +1,6 @@
+# upgrade srss/.*?.rdf
+#author: SHIGETA Takeshiro
+author: NikkeiBP
+handle: http://business\.nikkeibp\.co\.jp/article/
+extract_xpath: //div[@id=articlecontent]
+extract_capture: description

@@ -1,0 +1,5 @@
+# upgrade http://blog.japan.cnet.com/.*/index.rdf
+#author: SHIGETA Takeshiro
+handle: http://japan\.cnet\.com/blog/
+extract_xpath: //div[@id=block_rblog_leaf]
+extract_capture: description

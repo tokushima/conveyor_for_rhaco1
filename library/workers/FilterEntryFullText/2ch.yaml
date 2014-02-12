@@ -1,0 +1,5 @@
+# http://www.2ch.net/
+#author: SHIGETA Takeshiro
+handle: ^http://[\w\d]+\.2ch\.net/.*/read\.cgi/
+extract: (<dl class="thread">.*?</dl>)
+extract_capture: description

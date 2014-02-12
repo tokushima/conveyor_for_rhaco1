@@ -1,0 +1,5 @@
+# http://sankei.jp.msn.com/rss/.*.xml
+#author: SHIGETA Takeshiro
+handle: http://sankei\.jp\.msn\.com/[\w./]+?/\d+/.*\.htm
+extract_xpath: //div[@class=_LSUCS]
+extract_capture: description

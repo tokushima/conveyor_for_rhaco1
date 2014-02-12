@@ -1,0 +1,10 @@
+# upgrade http://www.kajisoku.org/index.rdf
+#author: SHIGETA Takeshiro
+author: ÉJÉWë¨
+handle: http://www\.kajisoku\.org/\w+/(?:eid\d+|\d+)\.html
+extract_xpath: |
+  //div[@class=main]
+  //div[@id=commentbody]
+extract_capture: |
+  description
+  comment

@@ -1,0 +1,6 @@
+# NYTimes http://graphics8.nytimes.com/services/xml/rss/nyt/HomePage.xml
+#author: SHIGETA Takeshiro
+author: NY Times
+handle: http://www\.nytimes\.com/
+extract_xpath: /nyt_text
+extract_capture: description

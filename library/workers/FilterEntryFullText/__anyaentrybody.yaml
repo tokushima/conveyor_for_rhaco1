@@ -1,0 +1,15 @@
+# any page
+#author: SHIGETA Takeshiro
+match:  <div[^>]*?(?:class|id)\s*?=\s*?\"entry.*?body\"[^>]*>
+extract_xpath: |
+  //div[@class=entrybody]
+  //div[@class=entry-body]
+  //div[@id=entrybody]
+  //div[@id=entry-body]
+extract_capture: |
+  description
+  description
+  description
+  description
+extract_after_hook:
+  $item->setDescription($this->stripLinkList($item->getDescription()));

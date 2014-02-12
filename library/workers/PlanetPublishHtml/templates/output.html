@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<rt:setblock href="./widget.html" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{$title}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="Generates XHTML/CSS page templates in a Web 2.0 Stylee">
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="{$feedurl}">
+	<link rel="stylesheet" href="./style/{$theme}.css" type="text/css" />
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/description.js"></script>
+    <script type="text/javascript" src="./js/{$theme}.js"></script>
+</head>
+	<body>
+		<div class="box">
+			<div class="boxtop"><div></div>
+			</div>
+			<div class="content">
+				<div class="header"><div class="logoimg"></div>
+					<div class="logo">{$title}</div>
+					<div class="description">{$description}</div>
+				</div>
+				<div class="sidebar">
+					<div class="navigation">
+					</div>
+					<div>
+					SUBSCRIPTION<br>
+					<ul>
+					<rt:loop param="feeds" key="key" var="var">
+					<li><a href="{$key}">{$var}</a></li>
+					</rt:loop>
+					</ul>
+					</div>
+					<div>
+					POWERED BY<br>
+					<a href="http://www.rhaco.org/"><img src="http://media.rhaco.org/img/badges/rhaco_logo_120x27_color_white.gif" border="0" alt="A rhaco project." title="A rhaco project." /></a><br>
+					Conveyor<br>
+					</div>
+				</div>
+				<div class="main">
+				<rt:loop param="items" var="item">
+				<div class="item">
+				<h2>{$item.getPageName($item.getSource())}</h2>
+				<h3><a href="{$item.getLink()}">{$f.getCdata({$f.htmldecode({$item.getTitle()})})}</a></h3>
+				<div class="description">{$f.getCdata({$item.getDescription()})}</div>
+				<div class="widget"><rt:if param='{$item.getWidget()}'><rt:block name="widget" /></rt:if></div>
+				<div class="datetime">{$f.dateFormat({$item.getPubDate()})} {$item.getCategory()}</div>
+				</div>
+				</rt:loop>
+					<div class="clear"></div>
+				</div>
+				<div class="footer" id="copyright">Copyright 2006- <a href="http://www.rhaco.org/" target=_blank>The Rhacophorus Project</a>. All rights reserved.<br></div>
+			</div> 
+			<div class="boxbottom"><div></div>
+			</div>
+		</div> 
+	
+</body></html>

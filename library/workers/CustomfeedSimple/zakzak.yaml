@@ -1,0 +1,3 @@
+#author: SHIGETA Takeshiro
+handle: http://www.zakzak.co.jp/
+follow_link: http://www\.zakzak\.co\.jp/(?:top|spo|gei)/\d+

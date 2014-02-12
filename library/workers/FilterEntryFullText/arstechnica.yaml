@@ -1,0 +1,6 @@
+# Ars Technica from http://feeds.feedburner.com/arstechnica/
+#author: SHIGETA Takeshiro
+handle: http://arstechnica.com/
+extract_xpath: //div[@class=Body]
+extract_capture: description
+

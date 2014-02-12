@@ -1,0 +1,5 @@
+# upgrade http://mandanatsusin.cocolog-nifty.com/blog/index.rdf
+#author: SHIGETA Takeshiro
+handle: http://codezine\.jp/.*?/article
+extract_xpath: //div[@class=bodyformattedpage]
+extract_capture: description

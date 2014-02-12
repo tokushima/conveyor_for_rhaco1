@@ -1,0 +1,4 @@
+#author: woremacx
+author: 日経新聞
+handle: http://www\.nikkei\.co\.jp/
+follow_link: /news/\w+/\d+\w+\.html

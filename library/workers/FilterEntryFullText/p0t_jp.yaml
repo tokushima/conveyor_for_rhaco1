@@ -1,0 +1,6 @@
+# upgrade http://p0t.jp/mt/index.xml
+#author: SHIGETA Takeshiro
+author: p0t
+handle: http://p0t\.jp/mt/
+extract_xpath: //div[@class=entry-body]
+extract_capture: description

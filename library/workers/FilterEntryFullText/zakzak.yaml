@@ -1,0 +1,6 @@
+# http://bulknews.net/rss/rdf.cgi?ZakZak
+#author: SHIGETA Takeshiro
+author: ZAKZAK
+handle: http://www\.zakzak\.co\.jp/(?:top|spo|gei)/\d+
+extract_xpath: //span[@class=kiji]
+extract_capture: description

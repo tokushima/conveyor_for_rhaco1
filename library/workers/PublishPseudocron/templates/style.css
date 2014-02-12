@@ -1,0 +1,222 @@
+body{
+	margin: 10px;
+	padding: 10px;
+	color: #333333;
+	background-color: #ffffff;
+	font-size:nomal;
+}
+a {
+	text-decoration: none;
+}
+a:link {
+	color: #258fb8;
+}
+a:visited {
+	color: #258fb8;
+}
+a:hover {
+	color: #ff6666;
+	background: transparent; 
+	text-decoration: underline;
+}
+a:active {
+	color: #ff3333;
+	text-decoration: underline;
+}
+#container {
+	padding: 0px;
+	text-align: left;
+	margin: 0px;
+}
+#header{
+	height:80px;
+	background: #999999;
+	margin: 0px;
+	color:#ffffff;
+}
+#main{
+	margin-top:10px;
+	position:relative;
+}
+#footer{
+	height:30px;
+	background: #999999;
+	margin: 0px;
+	padding: 5px;
+	color:#ffffff;
+	font-size: small;
+}
+#mainleft{
+	position:absolute;
+	top:0;
+	left:0;
+	color: #ff6633;
+	width:200px;
+	height:100%;
+	margin-top:0px;
+}
+#maincenter{
+	top:0;
+	margin-left: 200px;
+	margin-right:200px;
+	border-right:1px solid #dddddd;
+	border-left:1px solid #dddddd;
+	min-height:80em;	
+}
+#mainright{
+	position:absolute;
+	top:0;
+	right:0;
+	color: #999999;
+	width:200px;
+}
+
+h1{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Verdana";
+	font-size: xx-large;
+	font-weight: bolder;
+	margin-left:10px;
+}
+h1 a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+h1 a:link {
+	color: #ffffff;
+}
+h1 a:visited {
+	color: #ffffff;
+}
+.description {
+	font-family: "Verdana";
+	font-size: x-small;
+	letter-spacing:1px;
+	margin-left:20px;
+	margin-top:2px;
+	margin-bottom:5px;
+}
+ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.entry{
+	margin: 0px;
+	padding-bottom:10px;
+	border-bottom: 1px #dddddd solid;
+}
+.entry_title {
+	font-size: nomal;
+	font-weight:bolder;
+	color: #258fb8;
+	margin: 15px 0px 20px 0px ;
+	border-left: 8px #258fb8 solid;
+	padding-left: 6px;
+}
+.entry_body {
+	font-size: small;
+	line-height:170%;
+	padding: 0 15px;
+	margin-bottom: 5px; 
+}
+.entry_state {
+	font-size:x-small;
+	color: #666666;
+	margin: 0px 15px 0px 10px;
+	text-align: right;
+}
+.linktitle {
+	font-family: "Verdana";
+	font-size:small;
+	font-weight: bolder;
+	margin-top: 15px;
+	padding-left: 4px;
+	border-left: 8px solid;
+}
+#mainleft .linktitle a{
+	color: #ff6633;
+}
+#mainright .linktitle a{
+	color: #999999;
+}
+
+.linktext {
+	font-size:small;
+	line-height:150%;
+	color: #666666;
+	padding: 10px 10px 20px 10px;
+	border-bottom: 1px #dddddd solid;
+}
+
+.package{
+}
+.package h2{
+	font-size: x-large;
+	font-weight:bolder;
+	color: #333333;
+}
+.file h3{
+	font-size: large;
+	font-weight:bolder;
+	color: #258fb8;
+}
+.file .version{
+	padding-top:0px;
+	padding-left: 6px;
+}
+.method{
+	margin: 0px;
+	padding-bottom:10px;
+	border-bottom: 1px #dddddd solid;
+}
+.method h3{
+	font-size: small;
+	font-weight:bolder;
+	color: #258fb8;
+	margin: 15px 0px 5px 0px ;
+	border-left: 8px #258fb8 solid;
+	padding-left: 6px;
+	background: none;		
+}
+.method h4{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Verdana";
+	font-size: x-small;
+	font-weight: bolder;
+	margin-left:10px;
+}
+
+.plugin .name{
+	position:relative;
+}
+.variable{
+	margin-left: 50px;
+}
+
+input, select, textarea{
+	font-size: small;
+	background-color:#ffffff;
+	border: 1px solid #cccccc;
+	margin:5px 0px 0px 2px;
+	padding:2px 2px 2px 2px;
+}
+input:focus, select:focus, textarea:focus{
+	background-color:#ffffcc;
+}
+input:text{
+	width:28em;
+}
+
+h1{
+	color:#006699;
+	margin: 0;
+	padding: 0;
+	font-family: "Verdana";
+	font-size: font-size: xx-large;
+	font-weight: bolder;
+	margin-left:10px;
+}
+		

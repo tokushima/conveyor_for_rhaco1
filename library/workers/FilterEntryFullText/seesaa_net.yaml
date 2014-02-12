@@ -1,0 +1,5 @@
+#author: SHIGETA Takeshiro
+author: Seesaa
+handle: http://\w+\.seesaa\.net/
+extract_xpath: //div[@class=text]
+extract_capture: description 

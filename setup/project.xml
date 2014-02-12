@@ -1,0 +1,39 @@
+<project rhacover="1.6.1" version="2.2.0" name="conveyor" info="http://conveyor.rhaco-users.jp/">
+	<description>
+		The application that collection, processing of the information, the output are done 
+	</description>
+	<input name="PUBLISH_PATH">
+		<title>publish path</title>
+		<data>{$rhaco.path('publish')}</data>
+	</input>
+	<select name="IS_LOGIN">
+		<title>login</title>
+		<description>An above menu[setup member] It is necessary to make a member</description>
+		<data caption="needlessness">false</data>
+		<data caption="need">true</data>
+	</select>
+	<input name="SERVER">
+		<title>install server</title>
+		<data></data>
+	</input>
+	<select name="IS_SERVER">
+		<title>It becomes an install server</title>
+		<description></description>
+		<data caption="no">false</data>
+		<data caption="yes">true</data>		
+	</select>
+	<input name="WORKER_URL">
+		<title>worker url</title>
+		<data>{$rhaco.url('library/workers')}</data>
+	</input>
+	<input name="WORKER_PATH">
+		<title>worker path</title>
+		<data>{$rhaco.lib('workers')}</data>
+	</input>
+	<select name="EXT_THEME">
+		<title>Theme</title>
+		<data caption="default"></data>
+		<data caption="gray">xtheme-gray</data>		
+		<data caption="slate(vista like)">xtheme-slate</data>		
+	</select>
+</project>

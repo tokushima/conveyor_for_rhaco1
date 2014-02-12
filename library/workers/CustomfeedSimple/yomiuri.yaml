@@ -1,0 +1,6 @@
+# upgrade Google News Sports feeds
+#author: Tatsuhiko Miyagawa
+author: 読売新聞
+modified: SHIGETA Takeshiro
+handle: http://www.yomiuri.co.jp/
+follow_link: /news/

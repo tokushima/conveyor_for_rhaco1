@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-12-04 11:53+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <team@exsample.com>\n"
+
+#: index.php:29
+
+msgid "Loading..."
+msgstr ""
+
+#: resources/templates/index.html:16
+
+msgid "add"
+msgstr ""
+
+#: resources/templates/index.html:17
+#: resources/templates/index.html:21
+
+msgid "delete"
+msgstr ""
+
+#: resources/templates/index.html:18
+
+msgid "generate"
+msgstr ""
+
+#: resources/templates/index.html:19
+
+msgid "load"
+msgstr ""
+
+#: resources/templates/index.html:20
+
+msgid "install"
+msgstr ""
+
+#: resources/templates/index.html:22
+
+msgid "update"
+msgstr ""
+
+#: resources/templates/index.html:23
+
+msgid "Loading"
+msgstr ""
+
+#: resources/templates/index.html:24
+
+msgid "Generating"
+msgstr ""
+
+#: setup/project.xml:input
+
+msgid "publish path"
+msgstr ""
+
+#: setup/project.xml:input
+
+msgid "install server"
+msgstr ""
+
+#: setup/project.xml:input
+
+msgid "worker url"
+msgstr ""
+
+#: setup/project.xml:input
+
+msgid "worker path"
+msgstr ""
+
+#: setup/project.xml:select
+
+msgid "An above menu[setup member] It is necessary to make a member"
+msgstr ""
+
+#: setup/project.xml:select
+
+msgid "login"
+msgstr ""
+
+#: setup/project.xml:select
+
+msgid "need"
+msgstr ""
+
+#: setup/project.xml:select
+
+msgid "needlessness"
+msgstr ""
+
+#: setup/project.xml:select
+
+msgid ""
+msgstr ""
+
+#: setup/project.xml:select
+
+msgid "It becomes an install server"
+msgstr ""
+
+#: setup/project.xml:select
+
+msgid "no"
+msgstr ""
+
+#: setup/project.xml:select
+
+msgid "yes"
+msgstr ""
+
+#: setup/project.xml:select
+
+msgid "Theme"
+msgstr ""
+
+#: setup/project.xml:select
+
+msgid "default"
+msgstr ""
+
+#: setup/project.xml:select
+
+msgid "gray"
+msgstr ""
+
+#: setup/project.xml:select
+
+msgid "slate(vista like)"
+msgstr ""
+
+#: setup/project.xml:description
+
+msgid "The application that collection, processing of the information, the output are done"
+msgstr ""
+

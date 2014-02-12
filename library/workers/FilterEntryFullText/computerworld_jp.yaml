@@ -1,0 +1,5 @@
+# upgrade http://www.computerworld.jp/rss/rss.rdf
+#author: SHIGETA Takeshiro
+handle: http://www\.computerworld\.jp/news/
+extract: <!-- latest news -->(.*?)<!-- /latest news -->
+extract_capture: description
